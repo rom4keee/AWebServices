@@ -29,7 +29,7 @@ class ApiTests {
     }
 
     @Test
-   void VerifySingleUserData() {
+   void VerifyAllUserData() {
         given()
                 .when().get("/api/users/")
                 .then().log().body()
