@@ -29,10 +29,12 @@ class ApiTests {
     }
 
     @Test
-    void VerifySingleUserData() {
+   void VerifySingleUserData() {
         given()
-                .when().get("/api/users/2")
+                .when().get("/api/users/")
                 .then().log().body()
+                .contentType(ContentType.JSON)
+                .statusCode(200)
                 .body("data.id", notNullValue())
                 .body("data.email", notNullValue())
                 .body("data.first_name", notNullValue())
