@@ -14,8 +14,7 @@ public class Create {
         this.name = name;
         this.job = job;
     }
-
-
+    
     public Create(String name, String job, String id, Date createdAt) {
         this.name = name;
         this.job = job;
