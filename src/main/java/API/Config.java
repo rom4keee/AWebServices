@@ -8,7 +8,7 @@ import io.restassured.specification.RequestSpecification;
 public class Config {
 
     private Config() {
-        throw new IllegalStateException("Utility class");
+        throw new IllegalStateException();
     }
     public static RequestSpecification setBaseUri(String uri) {
         return new RequestSpecBuilder()
