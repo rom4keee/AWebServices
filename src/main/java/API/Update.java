@@ -6,8 +6,7 @@ public class Update {
     private String name;
     private String job;
     private Date updatedAt;
-
-
+    
     public Update() {
     }
     public Update(String name, String job) {
