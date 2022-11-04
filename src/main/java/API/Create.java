@@ -10,17 +10,6 @@ public class Create {
 
     public Create() {
     }
-    public Create(String name, String job) {
-        this.name = name;
-        this.job = job;
-    }
-    
-    public Create(String name, String job, String id, Date createdAt) {
-        this.name = name;
-        this.job = job;
-        this.id = id;
-        this.createdAt = createdAt;
-    }
     public String getName() {
         return name;
     }
